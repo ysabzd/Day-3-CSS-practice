@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Session II</title>
+    <style>
+        .block-1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .square {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+        }
+
+        .square.top-left {
+            top: 0;
+            left: 0;
+        }
+
+        .square.bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        .square.top-right{
+            top: 0;
+            right: 0;
+        }
+
+        .square.bottom-right{
+            bottom: 0;
+            right: 0;
+        }
+
+        .block-2 {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .round {
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 50px;
+        }
+
+        .round.A {
+            float: left;
+        }
+        .round.B {
+            float: right;
+        }
+
+        .round.C {
+            float: right;
+            clear: both;
+        }
+        .round.D {
+            float: left;
+            clear: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="block-1">
+        <div class="square top-left"></div>
+        <div class="square bottom-left"></div>
+        <div class="square top-right"></div>
+        <div class="square bottom-right"></div>
+        <div class="square center"></div>
+    </div>
+    <br><br>
+    <div class="block-2">
+        <div class="round A">A1</div>
+        <div class="round B">B2</div>
+        <div class="round C">C1</div>
+        <div class="round D">D1</div>
+    </div>
+</body>
+</html>
